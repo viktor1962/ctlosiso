@@ -250,8 +250,8 @@ virtualbox-guest-utils
 
 #ctlos repo
 ckbcomp
-# calamares-mini
-calamares-net
+calamares-mini
+# calamares-net
 mkinitcpio-openswap
 
 yay
