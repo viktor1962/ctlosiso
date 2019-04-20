@@ -12,7 +12,7 @@ if [[ $EUID -ne 0 ]]; then
 		exit 1
 fi
 
-ISO="${iso_name}_${iso_de}_${iso_version}.iso"
+# ISO="${iso_name}_${iso_de}_${iso_version}.iso"
 
 #Build ISO File
 package=archiso
@@ -29,7 +29,7 @@ chown $USER out/
 cd out/
 
 #create md5sum, sha256, sig
-echo "create MD5, SHA-256 Checksum, sig"
-sudo -u $USER md5sum $ISO >> $ISO.md5sum.txt
-sudo -u $USER shasum -a 256 $ISO >> $ISO.sha256.txt
-sudo -u $USER gpg --detach-sign --no-armor $ISO
+# echo "create MD5, SHA-256 Checksum, sig"
+# sudo -u $USER md5sum $ISO >> $ISO.md5sum.txt
+# sudo -u $USER shasum -a 256 $ISO >> $ISO.sha256.txt
+# sudo -u $USER gpg --detach-sign --no-armor $ISO
